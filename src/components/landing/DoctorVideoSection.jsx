@@ -25,7 +25,7 @@ export default function DoctorVideoSection() {
             <div className="aspect-video rounded-xl overflow-hidden shadow-lg bg-white">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/1vQFii3kun0"
+                src="https://www.youtube.com/embed/Az2GHBTJiQQ"
                 title="Meet Dr. Hans Almanzar - Personal Introduction"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
