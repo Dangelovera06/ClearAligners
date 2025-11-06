@@ -29,8 +29,8 @@ export default function ConsultationVideoSection() {
             <span className="text-blue-600">Free Consultation</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-            See exactly what happens during your complimentary consultation and why 
-            thousands of patients choose our practice for their smile transformation.
+            See exactly what happens during your complimentary clear aligner consultation and why 
+            thousands of patients choose our practice for straightening their smiles.
           </p>
         </div>
 
@@ -64,9 +64,9 @@ export default function ConsultationVideoSection() {
                 Your Consultation Experience
               </h3>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                During your complimentary consultation, you'll receive a comprehensive evaluation 
-                and personalized treatment plan. No pressure, no sales pitch - just honest, 
-                expert guidance to help you make the best decision for your smile.
+                During your complimentary consultation, you'll receive a comprehensive smile assessment, 
+                3D digital scan, and personalized clear aligner treatment plan. No pressure, no sales pitch - just honest, 
+                expert guidance to help you achieve your perfect smile.
               </p>
             </div>
 
@@ -81,16 +81,16 @@ export default function ConsultationVideoSection() {
               <div className="flex items-start space-x-3">
                 <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900">Comprehensive Examination</h4>
-                  <p className="text-sm text-gray-600">Complete oral health assessment and 3D imaging</p>
+                  <h4 className="font-semibold text-gray-900">Digital Smile Assessment</h4>
+                  <p className="text-sm text-gray-600">Complete teeth alignment evaluation and 3D digital scanning</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-semibold text-gray-900">Personalized Treatment Plan</h4>
-                  <p className="text-sm text-gray-600">Custom solutions tailored to your specific needs and goals</p>
+                  <h4 className="font-semibold text-gray-900">Personalized Clear Aligner Plan</h4>
+                  <p className="text-sm text-gray-600">Custom treatment timeline with virtual preview of your future smile</p>
                 </div>
               </div>
               

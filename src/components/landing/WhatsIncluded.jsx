@@ -19,21 +19,21 @@ export default function WhatsIncluded() {
   const includedItems = [
     {
       icon: Scan,
-      title: "3D CT Scan",
+      title: "3D Digital Scan",
       value: "$250",
-      description: "Advanced imaging to see every detail of your jaw structure and plan the perfect solution."
+      description: "Precise digital scanning to create your custom aligner treatment plan with perfect accuracy."
     },
     {
       icon: Eye,
-      title: "Smile Simulation",
+      title: "Virtual Smile Preview",
       value: "$125", 
-      description: "See exactly how your new smile will look before we begin treatment."
+      description: "See exactly how your straightened smile will look before starting treatment — no guesswork!"
     },
     {
       icon: UserCheck,
-      title: "Expert Full-Arch Evaluation",
+      title: "Expert Orthodontic Evaluation",
       value: "$120",
-      description: "Comprehensive consultation with our experienced cosmetic dentist."
+      description: "Comprehensive assessment by our experienced orthodontist to design your perfect treatment plan."
     }
   ];
 
@@ -109,23 +109,23 @@ export default function WhatsIncluded() {
                 <div className="space-y-3 text-left">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">Complete oral health assessment</span>
+                    <span className="text-gray-700">Complete smile and alignment assessment</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">Advanced 3D imaging and measurements</span>
+                    <span className="text-gray-700">Advanced 3D digital scanning (no messy impressions!)</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">Digital smile preview and design</span>
+                    <span className="text-gray-700">Virtual preview of your straightened smile</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">Personalized treatment plan and timeline</span>
+                    <span className="text-gray-700">Customized treatment timeline (typically 3-18 months)</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">Financing and insurance guidance</span>
+                    <span className="text-gray-700">Flexible payment plans and insurance guidance</span>
                   </div>
                 </div>
               </div>
@@ -136,9 +136,8 @@ export default function WhatsIncluded() {
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 text-base w-full max-w-xs" // Updated classes for mobile optimization
                   onClick={goToQuiz}
                 >
-                  <Gift className="w-4 h-4 mr-2" /> {/* Changed icon size from w-5 h-5 to w-4 h-4 */}
-                  Yes, I Want My Free Smile Preview
-                  {/* <ArrowRight className="w-5 h-5 ml-2" /> Removed ArrowRight icon */}
+                  <Gift className="w-4 h-4 mr-2" />
+                  Yes, I Want My Free Smile Assessment
                 </Button>
               </div>
 

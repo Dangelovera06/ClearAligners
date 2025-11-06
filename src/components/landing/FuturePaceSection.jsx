@@ -15,21 +15,21 @@ export default function FuturePaceSection() {
   const scenarios = [
     {
       icon: Camera,
-      title: "Social Anxiety",
-      description: "Hiding your smile during family photos or feeling self-conscious when you laugh.",
-      quote: "I used to hate pictures."
+      title: "Photo-Shy",
+      description: "Hiding your smile in photos or covering your mouth when you laugh because of crooked teeth.",
+      quote: "I used to hate taking pictures."
     },
     {
       icon: Utensils,
-      title: "Eating Difficulties",
-      description: "Avoiding your favorite foods because they're difficult or painful to chew.",
-      quote: "I missed eating normally."
+      title: "Self-Conscious Smiling",
+      description: "Feeling embarrassed about gaps or crowding when you smile, affecting your confidence daily.",
+      quote: "I was afraid to smile in public."
     },
     {
       icon: UserX,
       title: "Lost Confidence",
-      description: "Feeling insecure in professional settings or shying away from meeting new people.",
-      quote: "It really affected my career."
+      description: "Feeling insecure in professional settings or avoiding social situations due to your teeth.",
+      quote: "My smile held me back professionally."
     }
   ];
 
@@ -42,11 +42,11 @@ export default function FuturePaceSection() {
             Sound Familiar?
           </Badge>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Stop Letting Dental Problems{" "}
-            <span className="text-blue-600">Control Your Life</span>
+            Stop Letting Crooked Teeth{" "}
+            <span className="text-blue-600">Hold You Back</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-            These issues affect more than just your teeth—they impact your confidence, relationships, and daily joy. You're not alone in feeling this way.
+            Misaligned teeth affect more than just your appearance—they impact your confidence, relationships, and daily happiness. You're not alone, and there's an invisible solution.
           </p>
         </div>
 
@@ -80,7 +80,7 @@ export default function FuturePaceSection() {
               <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
             </div>
             <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
-              The Ripple Effect of an Unresolved Problem
+              How Crooked Teeth Affect Your Life
             </h3>
             
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 text-left">
@@ -91,9 +91,9 @@ export default function FuturePaceSection() {
                 </h4>
                 <ul className="space-y-1 sm:space-y-2 text-gray-600 text-xs sm:text-sm">
                   <li>• Covering your mouth when you laugh or speak</li>
-                  <li>• Hiding from photos or smiling with your mouth closed</li>
-                  <li>• Feeling self-conscious or less attractive</li>
-                  <li>• Losing the simple joy of eating your favorite foods</li>
+                  <li>• Hiding from photos or smiling with lips closed</li>
+                  <li>• Feeling self-conscious about your appearance</li>
+                  <li>• Avoiding social situations due to embarrassment</li>
                 </ul>
               </div>
               
@@ -103,18 +103,18 @@ export default function FuturePaceSection() {
                   In Your Career & Social Life
                 </h4>
                 <ul className="space-y-1 sm:space-y-2 text-gray-600 text-xs sm:text-sm">
-                  <li>• Worrying about making a bad first impression</li>
+                  <li>• Worrying about first impressions in interviews</li>
                   <li>• Lacking confidence in professional meetings</li>
                   <li>• Hesitancy in dating or forming new relationships</li>
-                  <li>• Feeling that your smile doesn't reflect who you are inside</li>
+                  <li>• Feeling your smile doesn't match your personality</li>
                 </ul>
               </div>
             </div>
 
             <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-gray-50 rounded-xl">
               <p className="text-base sm:text-lg text-gray-800 italic">
-                "The biggest regret our patients have is waiting so long. 
-                Your solution is closer than you think."
+                "The biggest regret our patients have is not straightening their teeth sooner. 
+                Clear aligners make it easier than ever — comfortable, invisible, and effective."
               </p>
               <p className="text-xs sm:text-sm text-gray-600 mt-2">
                 — Dr. Hans Almanzar, St. Lucie Center for Cosmetic Dentistry

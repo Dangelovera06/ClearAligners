@@ -177,7 +177,7 @@ export default function Home() {
                  <span className="font-bold text-lg">St. Lucie Center</span>
               </div>
               <p className="text-gray-400 text-sm">
-                Transforming smiles and lives in Port St. Lucie since 2015.
+                Straightening smiles with invisible clear aligners in Port St. Lucie since 2015.
               </p>
             </div>
             <div>
@@ -200,19 +200,19 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>All-on-4 Implants</li>
-                <li>Single Implants</li>
-                <li>Implant-Supported Dentures</li>
-                <li>Smile Makeovers</li>
+                <li>Clear Aligners Express</li>
+                <li>Clear Aligners Standard</li>
+                <li>Clear Aligners Comprehensive</li>
+                <li>Smile Transformations</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Why Choose Us</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>1,000+ Successful Cases</li>
+                <li>1,000+ Happy Patients</li>
                 <li>4.9⭐ Google Rating</li>
-                <li>Same-Day Solutions</li>
-                <li>Lifetime Warranty</li>
+                <li>Invisible & Comfortable</li>
+                <li>Flexible Payment Plans</li>
               </ul>
             </div>
           </div>

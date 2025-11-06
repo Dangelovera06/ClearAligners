@@ -13,28 +13,28 @@ import {
 export default function SocialProofSection() {
   const testimonials = [
     {
-      name: "Maria Rodriguez",
-      age: "52",
+      name: "Sarah Martinez",
+      age: "28",
       location: "Port St. Lucie",
-      quote: "I finally love my smile. I wish I had done this years ago!",
-      treatment: "All-on-4",
+      quote: "No one even knew I was straightening my teeth. Best decision ever!",
+      treatment: "Clear Aligners",
+      image: "S"
+    },
+    {
+      name: "Michael Thompson",
+      age: "35", 
+      location: "Stuart",
+      quote: "So comfortable and convenient. I could eat and drink normally throughout treatment.",
+      treatment: "Clear Aligners",
       image: "M"
     },
     {
-      name: "Robert Johnson",
-      age: "61", 
-      location: "Stuart",
-      quote: "People think I'm 10 years younger. The confidence is incredible.",
-      treatment: "Full Arch",
-      image: "R"
-    },
-    {
-      name: "Linda Chen",
-      age: "48",
+      name: "Jessica Lee",
+      age: "42",
       location: "Jensen Beach", 
-      quote: "From hiding my smile to laughing freely in just 30 days.",
-      treatment: "All-on-4",
-      image: "L"
+      quote: "My teeth are perfectly straight now. I can't stop smiling!",
+      treatment: "Clear Aligners",
+      image: "J"
     }
   ];
 

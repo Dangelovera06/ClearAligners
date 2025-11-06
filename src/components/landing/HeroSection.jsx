@@ -40,7 +40,7 @@ export default function HeroSection() {
         video.bind("play", function() {
           if (window.fbq) {
             window.fbq('trackCustom', 'VideoPlay', {
-              video_title: 'The Procedure That Changed His Life',
+              video_title: 'Clear Aligners Transformation Story',
               video_type: 'VSL',
               video_id: 'bj6epe6th1'
             });
@@ -54,7 +54,7 @@ export default function HeroSection() {
             video._tracked25 = true;
             if (window.fbq) {
               window.fbq('trackCustom', 'VideoProgress', {
-                video_title: 'The Procedure That Changed His Life',
+                video_title: 'Clear Aligners Transformation Story',
                 progress: '25%',
                 video_id: 'bj6epe6th1'
               });
@@ -64,7 +64,7 @@ export default function HeroSection() {
             video._tracked50 = true;
             if (window.fbq) {
               window.fbq('trackCustom', 'VideoProgress', {
-                video_title: 'The Procedure That Changed His Life',
+                video_title: 'Clear Aligners Transformation Story',
                 progress: '50%',
                 video_id: 'bj6epe6th1'
               });
@@ -74,7 +74,7 @@ export default function HeroSection() {
             video._tracked75 = true;
             if (window.fbq) {
               window.fbq('trackCustom', 'VideoProgress', {
-                video_title: 'The Procedure That Changed His Life',
+                video_title: 'Clear Aligners Transformation Story',
                 progress: '75%',
                 video_id: 'bj6epe6th1'
               });
@@ -86,7 +86,7 @@ export default function HeroSection() {
         video.bind("end", function() {
           if (window.fbq) {
             window.fbq('trackCustom', 'VideoComplete', {
-              video_title: 'The Procedure That Changed His Life',
+              video_title: 'Clear Aligners Transformation Story',
               video_type: 'VSL',
               video_id: 'bj6epe6th1'
             });
@@ -113,7 +113,7 @@ export default function HeroSection() {
           if (window.fbq) {
             video.bind("play", function() {
               window.fbq('trackCustom', 'VideoPlay', {
-                video_title: 'The Procedure That Changed His Life',
+                video_title: 'Clear Aligners Transformation Story',
                 video_type: 'VSL',
                 video_id: 'bj6epe6th1'
               });
@@ -138,25 +138,25 @@ export default function HeroSection() {
           <div className="max-w-4xl w-full text-center">
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
-              The Solution To{" "}
+              Straighten Your Teeth{" "}
               <span className="text-blue-600 relative">
-                Missing Teeth
+                Without Metal Braces
                 <div className="absolute -bottom-1 sm:-bottom-2 left-0 right-0 h-2 sm:h-3 bg-blue-200/50 -z-10" />
-              </span>{" "}
-              and <span className="underline">Loose Dentures</span>
+              </span>
             </h1>
 
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-            <span className="underline">Trusted by 1,000+ patients.</span> Our FREE Full-Arch Smile Preview includes a{" "}
-            <strong className="text-gray-900">3D CT Scan, Smile Simulation, and Expert Evaluation</strong>{" "}
+            <span className="underline">Trusted by 1,000+ patients.</span> Get your dream smile with{" "}
+            <strong className="text-gray-900">invisible, comfortable clear aligners</strong>. Our FREE Smile Assessment includes a{" "}
+            <strong className="text-gray-900">3D Scan, Treatment Simulation, and Expert Evaluation</strong>{" "}
             — normally <span className="underline decoration-blue-800 font-semibold text-gray-800">$495</span>, yours <span className="underline decoration-blue-800 font-semibold text-gray-800">FREE</span> this month only.
           </p>
 
             {/* Video Title */}
             <div className="mb-6">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
-                The Procedure That Changed His Life
+                See How Clear Aligners Transformed Her Smile
               </h3>
             </div>
 

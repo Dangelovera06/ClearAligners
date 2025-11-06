@@ -26,12 +26,12 @@ export default function TransformationGallery() {
             Real Patient Results
           </Badge>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            See the Amazing{" "}
-            <span className="text-blue-600">Transformations</span>
+            Real Clear Aligner{" "}
+            <span className="text-blue-600">Success Stories</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-            These are real before and after photos from our patients who trusted us with their smile transformation. 
-            Each story represents a life changed and confidence restored. Hover over the images to slow down and take a closer look.
+            These are actual before and after photos from patients who chose clear aligners to straighten their smiles. 
+            Each transformation represents renewed confidence and a beautiful new smile. Hover over the images to slow down and take a closer look.
           </p>
         </div>
 
@@ -44,11 +44,11 @@ export default function TransformationGallery() {
         <div className="text-center">
           <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg max-w-2xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Ready for Your Transformation?
+              Ready to Straighten Your Smile?
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-6">
-              Join over 1,000+ patients who have transformed their smiles and lives. 
-              Your journey to a confident smile starts with a free consultation.
+              Join over 1,000+ patients who have achieved straighter smiles with clear aligners. 
+              Your journey to a confident, aligned smile starts with a free assessment.
             </p>
             
             <Button 

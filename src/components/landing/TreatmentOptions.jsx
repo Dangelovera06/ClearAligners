@@ -16,43 +16,46 @@ import {
 export default function TreatmentOptions() {
   const treatments = [
     {
-      image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68cb22ce16a6085c07946090/738c59a50_SINGLE.png",
-      title: "Single Dental Implant",
-      description: "Natural-looking, permanent replacement",
+      image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop",
+      title: "Clear Aligners Express",
+      description: "Quick fixes for minor alignment",
+      duration: "3-6 months",
       features: [
-        "Easy to maintain, lifetime durability",
-        "Ideal for 1 missing tooth",
-        "Preserves surrounding teeth"
+        "Perfect for minor spacing issues",
+        "Fastest treatment option",
+        "Ideal for touch-ups or minor corrections"
       ],
-      note: "May require bone grafting or sedation based on needs.",
+      note: "Best for patients with minimal crowding or spacing.",
       color: "blue",
       popular: false
     },
     {
-      image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68cb22ce16a6085c07946090/609454a09_SUPPORT.png",
-      title: "Implant-Supported Denture",
-      description: "Secured by up to 4 implants — no slipping",
+      image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop",
+      title: "Clear Aligners Standard",
+      description: "Comprehensive smile transformation",
+      duration: "6-12 months",
       features: [
-        "Improved chewing + confidence",
-        "Preserves jaw bone",
-        "More stable than traditional dentures"
+        "Corrects moderate alignment issues",
+        "Comfortable and virtually invisible",
+        "Removable for easy eating and cleaning"
       ],
-      note: "Great for multiple missing teeth needing stability.",
-      color: "green",
-      popular: false
-    },
-    {
-      image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68cb22ce16a6085c07946090/19238fed2_ALLON4.png",
-      title: "All-on-4 Fixed Full Arch",
-      description: "Full-smile restoration in one visit",
-      features: [
-        "Our most durable, long-term solution",
-        "Looks and feels like natural teeth",
-        "Same-day transformation possible"
-      ],
-      note: "Most popular option for complete smile makeovers.",
+      note: "Most popular choice for moderate crowding or gaps.",
       color: "purple",
       popular: true
+    },
+    {
+      image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop",
+      title: "Clear Aligners Comprehensive",
+      description: "Advanced orthodontic solution",
+      duration: "12-18 months",
+      features: [
+        "Handles complex bite issues",
+        "Includes refinement aligners",
+        "Achieves dramatic transformations"
+      ],
+      note: "Designed for complex cases requiring extensive movement.",
+      color: "green",
+      popular: false
     }
   ];
 
@@ -66,12 +69,12 @@ export default function TreatmentOptions() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Which Smile Transformation{" "}
-            <span className="text-blue-600">Is Right for You?</span>
+            Choose Your Perfect{" "}
+            <span className="text-blue-600">Clear Aligner Plan</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Every patient is unique. We offer three proven solutions to restore your smile 
-            and confidence, each tailored to your specific needs.
+            Every smile is unique. We offer three treatment tiers designed to straighten your teeth 
+            comfortably and effectively, tailored to your specific needs and timeline.
           </p>
         </div>
 
@@ -90,12 +93,19 @@ export default function TreatmentOptions() {
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-xl mb-2">{treatment.title}</CardTitle>
                 <p className="text-gray-600">{treatment.description}</p>
+                {treatment.duration && (
+                  <div className="mt-3">
+                    <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                      ⏱️ {treatment.duration}
+                    </span>
+                  </div>
+                )}
               </CardHeader>
 
               <CardContent>
                 {treatment.image && (
                   <div className="mb-6 px-4">
-                    <img src={treatment.image} alt={treatment.title} className="w-full h-auto rounded-lg" />
+                    <img src={treatment.image} alt={treatment.title} className="w-full h-auto rounded-lg object-cover" />
                   </div>
                 )}
                 <ul className="space-y-3 mb-6">
@@ -136,7 +146,7 @@ export default function TreatmentOptions() {
             <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 ml-2" />
           </Button>
           <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600 px-4">
-            Not sure which option is right for you? Schedule a free consultation to determine the best solution.
+            Not sure which plan is right for you? Take our 60-second quiz to get personalized recommendations.
           </p>
         </div>
       </div>

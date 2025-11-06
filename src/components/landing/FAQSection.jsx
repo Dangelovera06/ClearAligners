@@ -15,26 +15,26 @@ export default function FAQSection() {
   const faqs = [
     {
       icon: HelpCircle,
-      question: "What if I've been told I'm not a candidate?",
-      answer: "We hear this all the time — and most patients still qualify. Advances in dental implant technology mean that even patients with bone loss, diabetes, or other conditions can often receive implants. We use advanced 3D imaging and bone grafting techniques when needed. During your free consultation, we'll give you an honest assessment of your options.",
+      question: "Am I a good candidate for clear aligners?",
+      answer: "Most people with mild to moderate alignment issues are great candidates! Clear aligners can effectively treat crowding, gaps, overbites, underbites, and crossbites. During your free consultation, we'll assess your specific case and let you know if clear aligners are right for you. Even if you've had braces before and teeth have shifted, we can help!",
       color: "text-blue-600"
     },
     {
       icon: CreditCard,
-      question: "Will insurance help?",
-      answer: "Some insurance plans do provide coverage for implant procedures, especially when they're medically necessary. We'll guide you through every step of the insurance process and help maximize your benefits. We also offer flexible financing options with low monthly payments, so you don't have to wait to get the smile you deserve.",
+      question: "Will insurance cover clear aligners?",
+      answer: "Many dental insurance plans do provide coverage for orthodontic treatment, including clear aligners! We'll verify your benefits and help you maximize your coverage. We also offer flexible payment plans starting as low as $99/month, making it affordable to get the smile you've always wanted.",
       color: "text-green-600"
     },
     {
       icon: Shield,
-      question: "Is it painful?",
-      answer: "We offer sedation. Most patients say they felt nothing during the procedure and are surprised by how comfortable they were. We use the latest pain management techniques, and patients return to work shortly after their procedures. Your comfort is our priority throughout the entire process.",
+      question: "Do clear aligners hurt?",
+      answer: "Clear aligners are generally very comfortable! You may feel slight pressure when you switch to a new set of aligners (that's them working!), but most patients say it's far more comfortable than traditional braces. There are no metal brackets or wires to irritate your mouth, and you can remove them when needed.",
       color: "text-purple-600"
     },
     {
       icon: Clock,
-      question: "How long does it take?",
-      answer: "In many cases, you'll walk out with a new smile in just one day! Our All-on-4 procedure allows us to place implants and attach your new teeth in a single appointment. For some patients, the process may take 3-6 months depending on healing and specific needs. We'll give you a personalized timeline during your consultation.",
+      question: "How long does treatment take?",
+      answer: "Treatment time varies based on your individual needs. Minor corrections can take as little as 3-6 months with our Express plan. Moderate cases typically take 6-12 months, while more complex cases may take 12-18 months. During your consultation, we'll give you an accurate timeline for your specific situation.",
       color: "text-orange-600"
     }
   ];
@@ -101,8 +101,8 @@ export default function FAQSection() {
               Still Have Questions?
             </h3>
             <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6">
-              Every patient is unique, and we're here to address your specific concerns. 
-              During your free consultation, you'll have plenty of time to ask questions and get personalized answers.
+              Every smile is unique, and we're here to address your specific concerns. 
+              During your free assessment, you'll have plenty of time to ask questions and get personalized answers about your clear aligner treatment.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <div className="flex items-center space-x-2 text-gray-600">

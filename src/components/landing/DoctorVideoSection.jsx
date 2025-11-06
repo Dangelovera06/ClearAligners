@@ -15,7 +15,7 @@ export default function DoctorVideoSection() {
             A Message from <span className="text-blue-600">Dr. Almanzar</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Learn more about our approach to dental care and what makes our practice special
+            Learn about our approach to clear aligners and invisible teeth straightening
           </p>
         </div>
 
@@ -41,9 +41,9 @@ export default function DoctorVideoSection() {
                 What Sets Our Practice Apart
               </h3>
               <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-                At St Lucie Center for Cosmetic Dentistry, we offer comprehensive dental implant solutions. 
-                During your consultation, we'll assess your specific needs and create a personalized treatment plan 
-                that aligns with your budget and goals.
+                At St Lucie Center for Cosmetic Dentistry, we specialize in clear aligner treatments including Invisalign. 
+                During your consultation, we'll assess your teeth alignment and create a personalized treatment plan 
+                that fits your lifestyle, budget, and smile goals.
               </p>
             </div>
 
@@ -53,8 +53,8 @@ export default function DoctorVideoSection() {
                   <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">Full Arch Treatments Available</h4>
-                  <p className="text-sm sm:text-base text-gray-600">Complete smile restoration solutions for multiple missing teeth.</p>
+                  <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">Multiple Treatment Options</h4>
+                  <p className="text-sm sm:text-base text-gray-600">Express, Standard, and Comprehensive plans to fit any alignment need.</p>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ export default function DoctorVideoSection() {
                   <Scan className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
                 </div>
                 <div>
-                  <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">Comprehensive Consultation with Free CBCT Scans</h4>
+                  <h4 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">Comprehensive Consultation with Free 3D Scan</h4>
                   <p className="text-sm sm:text-base text-gray-600 font-semibold">($495 Value - Free This Month)</p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function DoctorVideoSection() {
             {/* Disclaimer */}
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 sm:p-4 mt-6 sm:mt-8">
               <p className="text-xs sm:text-sm text-gray-700 font-medium text-center">
-                <strong>DISCLAIMER:</strong> Dental Implants are NOT Free or Covered by Medicare or Medicaid*
+                <strong>DISCLAIMER:</strong> Clear Aligner treatment is NOT covered by Medicare. Some dental insurance plans may provide orthodontic benefits.*
               </p>
             </div>
           </div>

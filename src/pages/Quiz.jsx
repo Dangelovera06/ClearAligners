@@ -11,18 +11,18 @@ import QuizStep from '../components/quiz/QuizStep';
 
 const quizQuestions = [
 {
-  question: "What is your primary dental concern?",
-  options: ["Missing one or more teeth", "Loose or uncomfortable dentures", "Unhappy with the look of my smile", "Other"],
+  question: "What brings you to explore clear aligners?",
+  options: ["Crooked or misaligned teeth", "Gaps between teeth", "Crowded teeth", "Want a straighter smile"],
   key: "concern"
 },
 {
-  question: "Have you been told you're not a candidate for implants before?",
-  options: ["Yes", "No", "I'm not sure"],
-  key: "notCandidate"
+  question: "Have you had braces or orthodontic treatment before?",
+  options: ["Yes, as a child/teen", "Yes, as an adult", "No, never", "I had braces but teeth shifted back"],
+  key: "hasOrthodonticIssue"
 },
 {
   question: "How soon are you looking to start treatment?",
-  options: ["As soon as possible", "Within the next 3 months", "6+ months from now", "Just researching"],
+  options: ["As soon as possible", "Within the next 3 months", "6+ months from now", "Just researching options"],
   key: "timeline"
 }];
 
@@ -63,7 +63,7 @@ export default function QuizPage() {
     formData.append('email', userInfo.email);
     formData.append('phone', userInfo.phone);
     formData.append('concern', answers.concern || '');
-    formData.append('notCandidate', answers.notCandidate || '');
+    formData.append('hasOrthodonticIssue', answers.hasOrthodonticIssue || '');
     formData.append('timeline', answers.timeline || '');
     
     try {
@@ -93,14 +93,33 @@ export default function QuizPage() {
         
         // Also track as a custom event
         window.fbq('trackCustom', 'QuizCompleted', {
-          quiz_type: 'dental_consultation',
+          quiz_type: 'clear_aligner_consultation',
           concern: answers.concern || '',
           timeline: answers.timeline || '',
-          candidate_status: answers.notCandidate || ''
+          orthodontic_history: answers.hasOrthodonticIssue || ''
         });
         console.log('📋 QuizCompleted custom event fired');
       } else {
         console.log('❌ fbq not available for quiz tracking');
+      }
+
+      // Track with Go High Level
+      if (typeof window !== 'undefined' && window.externalTracking) {
+        try {
+          window.externalTracking.track('Lead', {
+            name: userInfo.name,
+            email: userInfo.email,
+            phone: userInfo.phone,
+            concern: answers.concern || '',
+            hasOrthodonticIssue: answers.hasOrthodonticIssue || '',
+            timeline: answers.timeline || '',
+            source: 'clear_aligner_quiz',
+            value: 495
+          });
+          console.log('✅ GHL Lead tracked');
+        } catch (ghlError) {
+          console.error('❌ GHL tracking error:', ghlError);
+        }
       }
       
       // Show success to user regardless (they don't need to know about backend issues)
@@ -122,7 +141,7 @@ export default function QuizPage() {
           </Button>
           <div className="flex items-center space-x-2">
             <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68cb22ce16a6085c07946090/2ab4892a3_favicon.png" alt="Logo" className="h-8 w-auto" />
-            <span className="font-bold text-lg text-gray-900">AOX Implant Dentures Quiz
+            <span className="font-bold text-lg text-gray-900">Clear Aligners Quiz
             </span>
           </div>
           <div className="w-10"></div> {/* Spacer */}
@@ -152,7 +171,7 @@ export default function QuizPage() {
                       
                       {/* Hidden fields for quiz answers */}
                       <input type="hidden" name="concern" value={answers.concern || ''} />
-                      <input type="hidden" name="notCandidate" value={answers.notCandidate || ''} />
+                      <input type="hidden" name="hasOrthodonticIssue" value={answers.hasOrthodonticIssue || ''} />
                       <input type="hidden" name="timeline" value={answers.timeline || ''} />
                       
                       <div>
@@ -202,8 +221,8 @@ export default function QuizPage() {
 
           <CardContent className="p-8 text-center">
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold mb-2">Thank You!</h2>
-              <p className="text-gray-600 mb-6">Your results are being prepared. Our team will contact you shortly to schedule your FREE consultation and 3D scan.</p>
+              <h2 className="text-2xl font-bold mb-2">You're All Set!</h2>
+              <p className="text-gray-600 mb-6">Your results are being prepared. Our team will contact you shortly to schedule your FREE smile assessment and 3D scan to see your future smile!</p>
               <Button onClick={() => navigate('/')}>Return to Homepage</Button>
             </CardContent>
           }

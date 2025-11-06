@@ -7,10 +7,10 @@ export default function ProblemSolutionBridge() {
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
           <div className="text-center lg:text-left order-2 lg:order-1">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-              It's More Than Just Teeth. It's Your Quality of Life.
+              It's More Than Just Straight Teeth. It's Your Confidence.
             </h2>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-              Whether you're missing more than one tooth, feel unhappy with your smile, or sense that your oral hygiene is affecting your day-to-day health and confidence—know that a solution is within reach.
+              Whether you have crooked teeth, gaps, or crowding that's affecting your confidence—know that a comfortable, invisible solution is within reach. Clear aligners allow you to straighten your smile without the hassle of metal braces, so you can feel confident throughout your entire transformation journey.
             </p>
           </div>
           

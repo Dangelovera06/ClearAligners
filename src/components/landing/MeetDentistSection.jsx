@@ -15,7 +15,7 @@ export default function MeetDentistSection() {
             Meet <span className="text-blue-600">Dr. Hans Almanzar</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
-            Leading cosmetic dentist with over 15 years of experience transforming smiles and lives
+            Leading cosmetic dentist specializing in clear aligners and Invisalign, with over 15 years of experience creating beautiful, straight smiles
           </p>
         </div>
 
