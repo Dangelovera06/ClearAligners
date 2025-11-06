@@ -31,97 +31,17 @@ export default function HeroSection() {
     navigate(createPageUrl('Quiz'));
   };
 
-  // Set up Wistia video tracking
+  // YouTube video tracking (using YouTube IFrame API)
   useEffect(() => {
-    const setupWistiaTracking = () => {
-      if (typeof window !== 'undefined' && window.Wistia) {
-        window.Wistia.api("bj6epe6th1", function(video) {
-        // Track video play
-        video.bind("play", function() {
-          if (window.fbq) {
-            window.fbq('trackCustom', 'VideoPlay', {
-              video_title: 'Clear Aligners Transformation Story',
-              video_type: 'VSL',
-              video_id: 'bj6epe6th1'
-            });
-          }
-        });
-
-        // Track 25% watched
-        video.bind("secondchange", function(s) {
-          const percent = Math.round((s / video.duration()) * 100);
-          if (percent === 25 && !video._tracked25) {
-            video._tracked25 = true;
-            if (window.fbq) {
-              window.fbq('trackCustom', 'VideoProgress', {
-                video_title: 'Clear Aligners Transformation Story',
-                progress: '25%',
-                video_id: 'bj6epe6th1'
-              });
-            }
-          }
-          if (percent === 50 && !video._tracked50) {
-            video._tracked50 = true;
-            if (window.fbq) {
-              window.fbq('trackCustom', 'VideoProgress', {
-                video_title: 'Clear Aligners Transformation Story',
-                progress: '50%',
-                video_id: 'bj6epe6th1'
-              });
-            }
-          }
-          if (percent === 75 && !video._tracked75) {
-            video._tracked75 = true;
-            if (window.fbq) {
-              window.fbq('trackCustom', 'VideoProgress', {
-                video_title: 'Clear Aligners Transformation Story',
-                progress: '75%',
-                video_id: 'bj6epe6th1'
-              });
-            }
-          }
-        });
-
-        // Track video completion
-        video.bind("end", function() {
-          if (window.fbq) {
-            window.fbq('trackCustom', 'VideoComplete', {
-              video_title: 'Clear Aligners Transformation Story',
-              video_type: 'VSL',
-              video_id: 'bj6epe6th1'
-            });
-          }
-        });
+    // Track video view on component mount
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('trackCustom', 'VideoView', {
+        video_title: 'Clear Aligners Transformation Story',
+        video_type: 'VSL',
+        video_id: 'HSP56h0m0b0',
+        platform: 'YouTube'
       });
-      } else {
-        // Wait for Wistia to load
-        setTimeout(setupWistiaTracking, 1000);
-      }
-    };
-
-    // Initial setup
-    setupWistiaTracking();
-    
-    // Also listen for Wistia ready event
-    if (typeof window !== 'undefined') {
-      window._wq = window._wq || [];
-      window._wq.push({
-        id: "bj6epe6th1",
-        onReady: function(video) {
-          console.log('Wistia video ready for tracking');
-          // Set up tracking when video is ready
-          if (window.fbq) {
-            video.bind("play", function() {
-              window.fbq('trackCustom', 'VideoPlay', {
-                video_title: 'Clear Aligners Transformation Story',
-                video_type: 'VSL',
-                video_id: 'bj6epe6th1'
-              });
-              console.log('Video play event tracked');
-            });
-          }
-        }
-      });
+      console.log('📹 Video view tracked');
     }
   }, []);
 
@@ -163,21 +83,16 @@ export default function HeroSection() {
             {/* VSL Video Container */}
             <div className="relative mb-8">
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white bg-black max-w-3xl mx-auto">
-                {/* Wistia Video Player */}
-                <div className="relative">
-                  <wistia-player
-                    media-id="bj6epe6th1"
-                    aspect="1.7777777777777777"
-                    className="w-full"
-                  ></wistia-player>
-                </div>
-
-                {/* Price Overlay */}
-                <div className="absolute top-3 sm:top-6 right-3 sm:right-6 bg-white/95 backdrop-blur-sm text-gray-900 px-2 sm:px-3 py-1 sm:py-2 rounded-md shadow-xl border border-gray-200 z-10">
-                  <div className="text-center">
-                    <div className="text-xs text-gray-600 font-medium">Normally $495</div>
-                    <div className="text-xs sm:text-sm font-bold text-red-600">FREE Today</div>
-                  </div>
+                {/* YouTube Video Player */}
+                <div className="relative aspect-video">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/HSP56h0m0b0"
+                    title="Clear Aligners Transformation Story"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
