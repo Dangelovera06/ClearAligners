@@ -98,64 +98,6 @@ export default function SocialProofSection() {
           ))}
         </div>
 
-        {/* Video Testimonials Section */}
-        <div className="mt-12 sm:mt-16 bg-white rounded-xl sm:rounded-2xl p-4 sm:p-8 shadow-lg">
-          <div className="text-center mb-6 sm:mb-8">
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-              Watch Real Patient Stories
-            </h3>
-            <p className="text-sm sm:text-base text-gray-600">
-              See the emotional transformations and hear directly from patients about their journey.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
-            <div className="aspect-video rounded-lg sm:rounded-xl overflow-hidden shadow-lg">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/wNI9Y1LZCO8"
-                title="Patient Testimonial Video 1"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-
-            <div className="aspect-video rounded-lg sm:rounded-xl overflow-hidden shadow-lg">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/P_juMNswLZQ"
-                title="Patient Testimonial Video 2"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-
-            <div className="aspect-video rounded-lg sm:rounded-xl overflow-hidden shadow-lg">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/HvZqxw_2INo"
-                title="Patient Testimonial Video 3"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-
-            <div className="aspect-video rounded-lg sm:rounded-xl overflow-hidden shadow-lg">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/dmmSdXthVxc"
-                title="Patient Testimonial Video 4"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-
         {/* Trust Indicators */}
         <div className="mt-8 sm:mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-8 opacity-60">
           <div className="flex items-center space-x-2">
