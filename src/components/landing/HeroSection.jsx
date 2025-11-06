@@ -50,7 +50,7 @@ export default function HeroSection() {
       {/* Doctor Background Image with Opacity */}
       <div className="absolute inset-0 overflow-hidden">
         <img 
-          src="/HERO IMAGE.PNG" 
+          src="/HERO%20IMAGE%20.png" 
           alt="Doctor Background" 
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         />
