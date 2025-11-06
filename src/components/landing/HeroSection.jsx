@@ -46,16 +46,11 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="relative bg-white pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 overflow-hidden">
-      {/* Doctor Background Image with Opacity */}
+    <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 overflow-hidden">
+      {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <img 
-          src="/HERO%20IMAGE%20.png" 
-          alt="Doctor Background" 
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-        />
-        {/* Gradient Fade to White */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/60 to-white" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-100 rounded-full opacity-20" />
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-100 rounded-full opacity-20" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,9 +68,7 @@ export default function HeroSection() {
           {/* Subheadline */}
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
             <span className="underline">Trusted by 1,000+ patients.</span> Get your dream smile with{" "}
-            <strong className="text-gray-900">invisible, comfortable clear aligners</strong>. Our FREE Smile Assessment includes a{" "}
-            <strong className="text-gray-900">3D Scan, Treatment Simulation, and Expert Evaluation</strong>{" "}
-            — normally <span className="underline decoration-blue-800 font-semibold text-gray-800">$495</span>, yours <span className="underline decoration-blue-800 font-semibold text-gray-800">FREE</span> this month only.
+            <strong className="text-gray-900">invisible, comfortable clear aligners</strong>.
           </p>
 
             {/* Video Title */}
