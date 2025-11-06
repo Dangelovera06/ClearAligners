@@ -81,7 +81,7 @@ export default function HeroSection() {
             {/* Video Title */}
             <div className="mb-6">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900">
-                See How Clear Aligners Transformed Her Smile
+                See How Clear Aligners Transform Your Smile
               </h3>
             </div>
 
