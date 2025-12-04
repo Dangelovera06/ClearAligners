@@ -17,7 +17,6 @@ import DoctorVideoSection from "../components/landing/DoctorVideoSection";
 import ProblemSolutionBridge from "../components/landing/ProblemSolutionBridge";
 import SocialProofSection from "../components/landing/SocialProofSection";
 import TransformationGallery from "../components/landing/TransformationGallery";
-import WhatsIncluded from "../components/landing/WhatsIncluded";
 import FuturePaceSection from "../components/landing/FuturePaceSection";
 import FAQSection from "../components/landing/FAQSection";
 import ConsultationVideoSection from "../components/landing/ConsultationVideoSection";
@@ -160,7 +159,6 @@ export default function Home() {
       <ProblemSolutionBridge />
       <SocialProofSection />
       <TransformationGallery />
-      <WhatsIncluded />
       <FuturePaceSection />
       <ConsultationVideoSection />
       <FAQSection />
